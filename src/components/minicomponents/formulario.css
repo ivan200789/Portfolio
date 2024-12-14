@@ -1,0 +1,136 @@
+/* Contenedor del formulario */
+.formulario-container {
+  max-width: 500px;
+  margin: 2rem auto; 
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Título */
+.formulario-container h2 {
+  text-align: center;
+  color: #455a64;
+  margin-bottom: 1rem;
+}
+.validacion{
+  text-align: center;
+  color: #ffff;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+/* Campos del formulario */
+.campo {
+  margin-bottom: 1.5rem;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  color: #37474f;
+  margin-bottom: 0.5rem;
+}
+
+.campo input,
+.campo textarea {
+  width: 95%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #455a64;
+  outline: none;
+}
+
+/* Botón enviar */
+.boton-enviar {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #455a64;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #37474f;
+}
+
+/* Mensaje de éxito */
+.mensaje-exito {
+  text-align: center;
+  color: #388e3c;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .formulario-container {
+    max-width: 90%; /* Ajusta el formulario al 90% del ancho disponible */
+    padding: 1rem; /* Reduce el padding para ahorrar espacio */
+  }
+
+  .campo {
+    margin-bottom: 1.2rem; /* Reduce el espacio entre los campos */
+  }
+
+  .campo input,
+  .campo textarea {
+    width: 90%; /* Los campos ocuparán todo el ancho disponible */
+    padding: 0.6rem; /* Ajusta el padding para pantallas pequeñas */
+  }
+
+  .boton-enviar {
+    padding: 0.8rem; /* Ajusta el padding para que el botón sea más grande */
+    font-size: 1.1rem; /* Aumenta ligeramente el tamaño de la fuente */
+  }
+
+  .validacion {
+    font-size: 0.9rem; /* Reduce el tamaño del texto de validación */
+  }
+
+  .mensaje-exito {
+    font-size: 1rem; /* Ajusta el tamaño del mensaje de éxito */
+  }
+}
+
+/* Media query para pantallas muy pequeñas (móviles en modo retrato) */
+@media (max-width: 480px) {
+  .formulario-container {
+    padding: 0.8rem; /* Reduce aún más el padding */
+  }
+
+  .campo label {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente de los labels */
+  }
+
+  .campo input,
+  .campo textarea {
+    padding: 0.5rem; /* Ajusta el padding de los campos */
+    width: 90%;
+  }
+
+  .boton-enviar {
+    padding: 0.7rem; /* Ajusta el tamaño del botón */
+    font-size: 1rem; /* Reduce el tamaño de la fuente del botón */
+  }
+
+  .validacion {
+    font-size: 0.8rem; /* Ajusta aún más el tamaño del texto de validación */
+  }
+
+  .mensaje-exito {
+    font-size: 0.9rem; /* Ajusta el tamaño del mensaje de éxito */
+  }
+}

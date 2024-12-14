@@ -1,0 +1,88 @@
+.contene {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adjust spacing between image and text */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .dat {
+    width: 100%; /* Adjust width as needed */
+    padding-left: 40px;
+  }
+  
+  .Nombre {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 45px;
+  }
+  
+  .Info {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  .Imagen {
+    height: auto;
+    width: 110%; /* Adjust width as needed */
+    object-fit: cover; /* Ensure image fills the container */
+  }
+  
+  .boton {
+    width: 130px;
+    background-color: #a569bd;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .boton:hover {
+    background-color: #fff;
+  }
+  @media (max-width: 768px) {
+    .contene {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+      padding: 15px;
+    }
+  
+    .dat {
+      padding-left: 0; /* Eliminar padding izquierdo en pantallas pequeñas */
+    }
+  
+    .Nombre {
+      font-size: 35px; /* Reducir tamaño de fuente */
+      text-align: center;
+    }
+  
+    .Info {
+      font-size: 18px; /* Reducir tamaño de fuente */
+    }
+  
+    .Imagen {
+      width: 100%; /* Ajustar la imagen para que no sea más ancha que el contenedor */
+    }
+  
+    .boton {
+      width: 100%; /* Hacer el botón más grande en pantallas pequeñas */
+      height: 45px; /* Ajustar altura */
+    }
+  }
+  
+  /* Media query para pantallas muy pequeñas (móviles en modo retrato) */
+  @media (max-width: 480px) {
+    .Nombre {
+      font-size: 28px; /* Reducir aún más el tamaño de la fuente */
+
+    }
+  
+    .Info {
+      font-size: 16px; /* Reducir tamaño de la fuente */
+    }
+  
+    .boton {
+      height: 40px; /* Ajustar altura del botón */
+    }
+  }

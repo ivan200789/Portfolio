@@ -1,0 +1,72 @@
+/* contacto.css */
+
+
+.contacto {
+  width: 100%;
+  background-color: #7f8c8d;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Titlee {
+  text-align: center;
+  font-size: 60px;
+  color: #ffff;
+  padding-top: 1%;
+}
+
+.custom-icon {
+  width: 200px; /* Ajusta el tamaño según tus necesidades */
+}
+
+/*asdasd*/
+textarea {
+  resize: none;
+}
+
+.text {
+color: white;
+font-size: 20px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+white-space: nowrap;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Github svg{
+  width:  20%;
+  height: 20%;
+  background-color: #bb8fce;
+  border-radius: 50%;
+}
+.Github svg:hover{
+  background-color: #a569bd;
+}
+.Linkedin svg{
+  width:  20%;
+  height: 20%;
+  background-color: #fff ;
+  border-radius: 50%;
+  margin-left: 4%;
+}
+.Linkedin svg:hover{
+  background-color: #0e76a8 ;
+}
+
+.Gmail svg{
+  width:  20%;
+  height: 20%;
+  background-color: #fff ;
+  border-radius: 50%;
+  margin-left: 4%;
+}
+.Gmail svg:hover{
+  background-color: #c0392b ;
+}
