@@ -23,10 +23,10 @@
   
   .Imagen {
     height: auto;
-    width: 110%; /* Adjust width as needed */
-    object-fit: cover; /* Ensure image fills the container */
+    width: 110%; 
+    object-fit: cover; 
   }
-  
+
   .boton {
     width: 130px;
     background-color: #a569bd;
@@ -71,7 +71,6 @@
     }
   }
   
-  /* Media query para pantallas muy pequeñas (móviles en modo retrato) */
   @media (max-width: 480px) {
     .Nombre {
       font-size: 28px; /* Reducir aún más el tamaño de la fuente */

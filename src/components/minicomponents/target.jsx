@@ -1,6 +1,7 @@
 import "../minicomponents/target.css";
 
 export default function Target(props) {
+    console.log(props.imagen)
     return (
         <div className="contene">
                 <div className="dat">
@@ -16,7 +17,7 @@ export default function Target(props) {
                 </div>    
             <div className="tarjeta">
 
-                <img src={props.imagen} alt="" className="Imagen" />
+                <img src={props.imagen} className="Imagen" />
             </div>
         </div>
     );

@@ -16,7 +16,6 @@ export default function Inicio(params) {
              onInit={(typewriter) => {
                 typewriter.typeString('Hola!, Mi nombre es Ivan Molina')
                   .callFunction(() => {
-                    console.log('String typed out!');
                   })
                   .pauseFor(2500)
              
