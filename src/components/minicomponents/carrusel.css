@@ -14,6 +14,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    -webkit-box-shadow: 24px 1px 118px -53px rgba(0,0,0,0.75);
+-moz-box-shadow: 24px 1px 118px -53px rgba(0,0,0,0.75);
+box-shadow: 24px 1px 118px -53px rgba(0,0,0,0.75);
   }
   
   .swiper-slide{

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 .contene {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Adjust spacing between image and text */
     padding: 20px; /* Add padding for better spacing */
+  
   }
   
   .dat {
@@ -11,14 +13,16 @@
   }
   
   .Nombre {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: "IBM Plex Sans", serif;
+
     font-size: 45px;
   }
   
   .Info {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: "IBM Plex Sans", serif;
     margin-top: 10px;
     font-size: 20px;
+
   }
   
   .Imagen {
@@ -42,6 +46,12 @@
   .boton:hover {
     background-color: #fff;
   }
+  @media (max-width: 1920px){
+    .Info{
+      background-color: "red";
+    }
+  }
+
   @media (max-width: 768px) {
     .contene {
       flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
