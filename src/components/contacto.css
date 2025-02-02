@@ -9,7 +9,7 @@
 
 .Titlee {
   text-align: center;
-  font-size: 60px;
+  font-size: clamp(2rem, 5vw, 60px);
   color: #ffff;
   padding-top: 1%;
 }
@@ -24,14 +24,17 @@ textarea {
 }
 
 .text {
-color: white;
-font-size: 20px;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
--ms-transform: translate(-50%, -50%);
-white-space: nowrap;
+  color: white;
+  font-size: clamp(1rem, 3vw, 20px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: normal;
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
 }
 .icons{
   margin-top: 30px;
@@ -95,11 +98,32 @@ white-space: nowrap;
   fill: white;
 }
 
-/* Media queries para responsividad */
+/* Media queries actualizados para mejor responsividad */
+@media screen and (max-width: 1024px) {
+  .social-icons {
+    gap: 2.5rem;
+    margin: 2.5rem 0;
+  }
+
+  .social-icons a {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Github svg,
+  .Linkedin svg,
+  .Portfolio svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .social-icons {
     gap: 2rem;
     margin: 2rem 0;
+    flex-wrap: wrap;
+    padding: 0 1rem;
   }
 
   .social-icons a {
@@ -110,8 +134,8 @@ white-space: nowrap;
   .Github svg,
   .Linkedin svg,
   .Portfolio svg {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 }
 
