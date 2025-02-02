@@ -10,6 +10,7 @@
     margin: 0 auto;
     background-color: #229954;
     margin: 0 auto;
+    z-index: 2;
 }
 .Name{
     align-items: center;

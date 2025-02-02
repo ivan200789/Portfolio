@@ -14,7 +14,6 @@ function App() {
     <>
       <div>
 
-          <Header/>
           <Inicio/>
           <Proyectos/>
           <Stack/>
