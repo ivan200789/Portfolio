@@ -41,47 +41,114 @@ white-space: nowrap;
   text-align: center;
 }
 
-.Github svg {
-  width: 20%;
-  height: 20%;
-  background-color: #bb8fce;
-  border-radius: 50%;
-  transition: all 0.5s ease-in-out; 
+.social-icons {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
 }
 
-.Github svg:hover {
-  background-color: #a569bd;
-  transform: scale(1.1); 
+.social-icons a {
+  width:  120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para cada ícono */
+.Github {
+  background-color: #6e40c9;
+}
+
+.Github svg {
+  fill: white;
+  width: 55px;
+  height: 55px;
+}
+
+.Linkedin {
+  background-color: #0077b5;
 }
 
 .Linkedin svg {
-  width: 20%;
-  height: 20%;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 4%;
-  transition: all 0.5s ease-in-out; 
+  width: 55px;
+  height: 55px;
 }
 
-.Linkedin svg:hover {
-  background-color: #0e76a8;
-  transform: scale(1.1); 
+.Portfolio {
+  background-color: #2d333b;
 }
 
 .Portfolio svg {
-  width: 20%;
-  height: 20%;
-  background-color: #fff;
-  border-radius: 50%;
-  margin-left: 4%;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 8px;
+  width: 55px;
+  height: 55px;
+  fill: white;
 }
 
-.Portfolio svg:hover {
-  background-color: #2c3e50;
-  color: #fff;
-  transform: scale(1.15) translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+  .social-icons {
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .social-icons a {
+    width: 80px;
+    height: 80px;
+  }
+
+  .Github svg,
+  .Linkedin svg,
+  .Portfolio svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .social-icons {
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .social-icons a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .Github svg,
+  .Linkedin svg,
+  .Portfolio svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .social-icons {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .social-icons a {
+    width: 60px;
+    height: 60px;
+  }
+
+  .Github svg,
+  .Linkedin svg,
+  .Portfolio svg {
+    width: 35px;
+    height: 35px;
+  }
 }

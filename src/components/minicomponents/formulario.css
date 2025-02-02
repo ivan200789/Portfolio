@@ -2,10 +2,10 @@
 .formulario-container {
   max-width: 500px;
   margin: 2rem auto; 
-  padding: 1.5rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -24,6 +24,7 @@
 /* Campos del formulario */
 .campo {
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .campo label {
@@ -35,37 +36,48 @@
 
 .campo input,
 .campo textarea {
-  width: 95%;
+  width: 100%;
   padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
 }
 
 .campo input:focus,
 .campo textarea:focus {
   border-color: #455a64;
-  outline: none;
+  box-shadow: 0 0 0 3px rgba(69, 90, 100, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Botón enviar */
 .boton-enviar {
   display: block;
   width: 100%;
-  padding: 0.75rem;
-  background-color: #455a64;
+  padding: 0.85rem;
+  background: linear-gradient(145deg, #455a64, #37474f);
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .boton-enviar:hover {
-  background-color: #37474f;
+  background: linear-gradient(145deg, #37474f, #455a64);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.boton-enviar:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Mensaje de éxito */
@@ -77,60 +89,60 @@
 }
 @media (max-width: 768px) {
   .formulario-container {
-    max-width: 90%; /* Ajusta el formulario al 90% del ancho disponible */
-    padding: 1rem; /* Reduce el padding para ahorrar espacio */
+    margin: 1rem;
+    padding: 1.5rem;
+    max-width: calc(100% - 2rem);
   }
 
   .campo {
-    margin-bottom: 1.2rem; /* Reduce el espacio entre los campos */
+    margin-bottom: 1.2rem;
   }
 
   .campo input,
   .campo textarea {
-    width: 90%; /* Los campos ocuparán todo el ancho disponible */
-    padding: 0.6rem; /* Ajusta el padding para pantallas pequeñas */
+    width: 100%;
   }
 
   .boton-enviar {
-    padding: 0.8rem; /* Ajusta el padding para que el botón sea más grande */
-    font-size: 1.1rem; /* Aumenta ligeramente el tamaño de la fuente */
+    padding: 0.8rem;
+    font-size: 1.1rem;
   }
 
   .validacion {
-    font-size: 0.9rem; /* Reduce el tamaño del texto de validación */
+    font-size: 0.9rem;
   }
 
   .mensaje-exito {
-    font-size: 1rem; /* Ajusta el tamaño del mensaje de éxito */
+    font-size: 1rem;
   }
 }
 
-/* Media query para pantallas muy pequeñas (móviles en modo retrato) */
 @media (max-width: 480px) {
   .formulario-container {
-    padding: 0.8rem; /* Reduce aún más el padding */
+    margin: 0.5rem;
+    padding: 1rem;
   }
 
   .campo label {
-    font-size: 0.9rem; /* Reduce el tamaño de la fuente de los labels */
+    font-size: 0.9rem;
   }
 
   .campo input,
   .campo textarea {
-    padding: 0.5rem; /* Ajusta el padding de los campos */
+    padding: 0.5rem;
     width: 90%;
   }
 
   .boton-enviar {
-    padding: 0.7rem; /* Ajusta el tamaño del botón */
-    font-size: 1rem; /* Reduce el tamaño de la fuente del botón */
+    padding: 0.7rem;
+    font-size: 1rem;
   }
 
   .validacion {
-    font-size: 0.8rem; /* Ajusta aún más el tamaño del texto de validación */
+    font-size: 0.8rem;
   }
 
   .mensaje-exito {
-    font-size: 0.9rem; /* Ajusta el tamaño del mensaje de éxito */
+    font-size: 0.9rem;
   }
 }
