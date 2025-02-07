@@ -32,20 +32,34 @@
   }
 
   .boton {
-    width: 130px;
+    width: 140px;
     background-color: #a569bd;
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid black;
+    height: 70px;
+    border-radius: 25px;  /* Más redondeado */
+    border: none;  /* Eliminamos el borde negro */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    color: white;  /* Color de texto blanco */
+    font-family: "IBM Plex Sans", serif;
+    font-weight: 500;
+    cursor: pointer;  /* Cursor tipo pointer */
+    transition: all 0.3s ease;  /* Transición suave */
+    box-shadow: 0 4px 6px rgba(165, 105, 189, 0.2);  /* Sombra suave */
   }
   
   .boton:hover {
-    background-color: #fff;
+    background-color: #8e44ad;  /* Color más oscuro al hover */
+    transform: translateY(-2px);  /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(165, 105, 189, 0.4);  /* Sombra más pronunciada */
   }
+
+  .boton:active {
+    transform: translateY(1px);  /* Efecto de presión */
+    box-shadow: 0 2px 4px rgba(165, 105, 189, 0.2);  /* Sombra más sutil */
+  }
+
   @media (max-width: 1920px){
     .Info{
       background-color: "red";
